@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="hamburgerMenu" class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="left">
+        <h1>Photoapp 2.0</h1>
+        <!-- File Upload Form -->
+        <form id="uploadForm">
+            <input type="file" id="imageInput" name="image" accept="image/*" style="display: none">
+            <label for="imageInput"><div id="preview" class="preview">
+                <img src="images/default_plus.png" alt="Placeholder">
+            </div></label>
+            <button type="button" id="uploadButton">Upload</button>
+        </form>
+    
+        <div id="progressContainer">
+            <progress id="progressBar" value="0" max="100" style="width: 100%; display: none;"></progress>
+        </div>
+    
+        <div id="modal" style="display: block; position: absolute; z-index: 1000;">
+            <img src="#" style="display: none; position: absolute; z-index: 1000; width: 800px;">
+        </div>
+    
+        <!-- Slideshow Checkbox -->
+        <div class="slider">
+            <input type="checkbox" id="slideshowCheckbox" style="display: none">
+            <label for="slideshowCheckbox">Slideshow: <div class="toggleButton" style="color: red">&nbsp;OFF</div></label>
+        </div>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div id="contextMenu" class="context-menu">
+        <ul>
+            <li id="deleteImage">Delete Image</li>
+        </ul>
+    </div>
+
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>

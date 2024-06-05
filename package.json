@@ -1,0 +1,26 @@
+{
+  "name": "photoapp2.0",
+  "version": "2.0.0",
+  "description": "A photo app that allows users to upload and view photos with slideshow functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "arkonique",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bufferutil": "^4.0.8",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "utf-8-validate": "^6.0.4",
+    "ws": "^8.17.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
